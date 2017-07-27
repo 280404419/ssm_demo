@@ -23,7 +23,7 @@ public class UserController {
 		User user = userService.getUserById(uid);
 		if(user != null){
 			request.setAttribute("name", user.getUserName());
-			model.addAttribute("mame", user.getUserName());
+			model.addAttribute("name", user.getUserName());
 			return "showName";
 		}
 		request.setAttribute("error", "没有找到该用户！");
