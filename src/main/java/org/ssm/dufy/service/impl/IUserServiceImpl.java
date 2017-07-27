@@ -18,4 +18,9 @@ public class IUserServiceImpl  implements IUserService{
 	public User getUserById(int id) {
 		return udao.selectByPrimaryKey(id);
 	}
+
+	@Override
+	public void insert(User user) {
+		udao.insert(user);
+	}
 }

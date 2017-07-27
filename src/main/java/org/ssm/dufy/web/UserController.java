@@ -29,4 +29,10 @@ public class UserController {
 		request.setAttribute("error", "没有找到该用户！");
 		return "error";
 	}
+	@RequestMapping(value="/adduser",method=RequestMethod.POST)
+	public String adduser(User user){
+		userService.insert(user);
+		return "showName";
+	}
+
 }
