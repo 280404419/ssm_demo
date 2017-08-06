@@ -7,8 +7,8 @@
 </head>
 <body>
     <form action="${pageContext.request.contextPath }/adduser" METHOD="post">
-        用户名：<input type="text" name="userName" id="userName">
-        密码：<input type="text" name="password" id="password">
+        用户名：<input type="text" name="userName" id="userNameQ">
+        密码：<input type="text" name="password" id="passwordQ">
         年龄：<input type="text" name="age" id="age">
         <input type="submit" value="提交">
     </form>
