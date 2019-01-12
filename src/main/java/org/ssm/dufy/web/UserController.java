@@ -38,23 +38,20 @@ public class UserController {
 		return "showName";
 	}
 
-	@RequestMapping(value="/adduser",method=RequestMethod.POST)
-	public String adduser(HttpServletRequest request){
-		// System.out.println(user);
-		Map<String,String[]> mm = request.getParameterMap();
-		for (Map.Entry<String,String[]> entry: mm.entrySet()) {
-			System.out.println(entry.getKey());
-			System.out.println(entry.getValue()[0].toString());
-		}
-		System.out.print(request.getParameterMap().size());
-		System.out.println(request.getAttributeNames());
-
-		String s = request.getParameter("userName");
-		String s1 = request.getParameter("password");
-		System.out.println(s);
-		System.out.println(s1);
-		System.out.println(request.getParameterNames());
-		return "showName";
-	}
+	/*
+	 * @RequestMapping(value="/adduser",method=RequestMethod.POST) public String
+	 * adduser(HttpServletRequest request){ // System.out.println(user);
+	 * Map<String,String[]> mm = request.getParameterMap(); for
+	 * (Map.Entry<String,String[]> entry: mm.entrySet()) {
+	 * System.out.println(entry.getKey());
+	 * System.out.println(entry.getValue()[0].toString()); }
+	 * System.out.print(request.getParameterMap().size());
+	 * System.out.println(request.getAttributeNames());
+	 * 
+	 * String s = request.getParameter("userName"); String s1 =
+	 * request.getParameter("password"); System.out.println(s);
+	 * System.out.println(s1); System.out.println(request.getParameterNames());
+	 * return "showName"; }
+	 */
 
 }
