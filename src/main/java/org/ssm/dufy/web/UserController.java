@@ -35,6 +35,7 @@ public class UserController {
 	@RequestMapping(value="/adduser",method=RequestMethod.POST)
 	public String adduser(User user){
 		userService.insert(user);
+		String s = new String();
 		return "showName";
 	}
 
